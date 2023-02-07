@@ -12,7 +12,7 @@ function Youtube({ejercicioModal}) {
             setVideos(resultado.items.slice(0,3))
         }
 
-        consultarVideos()
+          consultarVideos()
     },[ejercicioModal])
 
   return (
