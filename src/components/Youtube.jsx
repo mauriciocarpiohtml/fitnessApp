@@ -11,6 +11,7 @@ function Youtube({ejercicioModal}) {
             const resultado = await respuesta.json()
             const topVideos = await resultado.items.slice(0,3)
             setVideos(topVideos)
+            console.log(videos)
         }
 
           consultarVideos() 
