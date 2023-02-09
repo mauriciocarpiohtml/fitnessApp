@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext, useState, useEffect } from 'react'
 import ContextEjercicios from '../context/EjerciciosProvider'
 import NavegacionDias from '../componentsRutina/NavegacionDias'
-import EjerciciosLista from '../components/EjerciciosLista'
+import ListaAgregados from '../componentsRutina/ListaAgregados'
 
 
 
@@ -30,7 +30,7 @@ function Rutina() {
       <NavegacionDias
         diaSeleccionado={diaSeleccionado} 
         setDiaSeleccionado={setDiaSeleccionado}/>
-      <EjerciciosLista
+      <ListaAgregados
       ejerciciosPorPagina={rutinaFiltrada} />
     </div>
   )

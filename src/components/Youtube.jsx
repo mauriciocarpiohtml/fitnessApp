@@ -9,11 +9,12 @@ function Youtube({ejercicioModal}) {
             const url = `https://youtube-search-results.p.rapidapi.com/youtube-search/?q=${ejercicioModal.name}`
             const respuesta = await fetch(url, opcionesYoutube)
             const resultado = await respuesta.json()
-            setVideos(resultado.items.slice(0,3))
+            const topVideos = await resultado.items.slice(0,3)
+            setVideos(topVideos)
         }
 
-          consultarVideos()
-    },[ejercicioModal])
+          consultarVideos() 
+    },[])
 
   return (
     <>

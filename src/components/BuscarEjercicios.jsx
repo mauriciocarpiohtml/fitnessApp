@@ -9,6 +9,7 @@ function BuscarEjercicios({setEjercicios}) {
     const url = 'https://exercisedb.p.rapidapi.com/exercises'
     const respuesta = await fetch(url, opcionesEjercicios)
     const resultado = await respuesta.json()
+    console.log(resultado)
 
     // traer solo los ejercicios que coincidan con esto
     const ejercicioBuscado= resultado.filter(
@@ -17,7 +18,6 @@ function BuscarEjercicios({setEjercicios}) {
       || ejercicio.target.toLowerCase().includes(busqueda)
       || ejercicio.bodyPart.toLowerCase().includes(busqueda)
     )
-
     setBusqueda('')
     setEjercicios(ejercicioBuscado.slice(0, 100))
   }
