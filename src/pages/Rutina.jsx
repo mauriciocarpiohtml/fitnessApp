@@ -4,9 +4,6 @@ import ContextEjercicios from '../context/EjerciciosProvider'
 import NavegacionDias from '../componentsRutina/NavegacionDias'
 import ListaAgregados from '../componentsRutina/ListaAgregados'
 
-
-
-
 function Rutina() {
   // activar modal con useContext y luego pasarlo aca
 
@@ -27,6 +24,7 @@ function Rutina() {
   
   return (
     <div className='flex flex-col mt-10 mb-10'>
+      
       <NavegacionDias
         diaSeleccionado={diaSeleccionado} 
         setDiaSeleccionado={setDiaSeleccionado}/>
