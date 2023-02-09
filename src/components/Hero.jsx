@@ -1,4 +1,3 @@
-import '../app.css'
 import hero from '../imagenes/hero1.jpg'
 
 function Hero() {
