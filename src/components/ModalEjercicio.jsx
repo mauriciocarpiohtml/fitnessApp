@@ -42,14 +42,14 @@ function ModalEjercicio() {
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                             <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
                         </svg>
-                        <p className='font-bold uppercase text-center mt-0 text-emerald-700'>{bodyPart}</p>
+                        <p className='font-bold uppercase text-center mt-0 text-emerald-700 text-xs md:text-base'>{bodyPart}</p>
                     </div>
 
                     <div className='p-5 flex flex-col gap-10 mt-5 mx-auto w-16 md:w-24 justify-center items-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="mx-auto" viewBox="0 0 16 16">
                             <path d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z"/>
                         </svg>
-                        <p className='font-bold uppercase text-center mt-0 text-emerald-700'>{equipment}</p>
+                        <p className='font-bold uppercase text-center mt-0 text-emerald-700 text-xs md:text-base'>{equipment}</p>
                     </div>
 
                     <div className='p-5 flex flex-col gap-10 mt-5 mx-auto w-16 md:w-24 justify-center items-center'>
@@ -59,7 +59,7 @@ function ModalEjercicio() {
                             <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
                             <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
                         </svg>
-                        <p className='font-bold uppercase text-center mt-0 text-emerald-700'>{target}</p>
+                        <p className='font-bold uppercase text-center mt-0 text-emerald-700 text-xs md:text-base'>{target}</p>
                     </div>
 
                 </div>
