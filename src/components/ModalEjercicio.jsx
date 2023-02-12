@@ -15,10 +15,10 @@ function ModalEjercicio() {
         <div className='p-5 md:p-10 md:flex justify-center items-center'>
             <img src={gifUrl} alt={name}/>
             <div className='flex flex-col '>
-                <h3 className='text-stone-700 mt-5 md:mt-1 uppercase text-2xl md:text-3xl font-bold text-center'>{name}</h3>
+                <h3 className='text-stone-700 mt-5 md:mt-1 uppercase text-xl md:text-3xl font-bold text-center'>{name}</h3>
                 <p className='mt-1 text-stone-400 text-center md:p-5'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quas! Ipsum praesentium, magnam perspiciatis blanditiis cupiditate dolor consequatur ducimus commodi.</p>
 
-                <div className='mt-3 flex flex-col md:flex md:flex-row justify-center items-center w-full  px-10 ml-5'>
+                <div className='mt-3 flex flex-col md:flex md:flex-row justify-center items-center w-full px-10 md:ml-5'>
                     <select
                         onChange={(e)=> setDia(e.target.value)}
                         className='p-3 rounded-lg cursor-pointer shadow-lg mt-1 w-full md:w-2/5 '>
