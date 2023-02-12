@@ -11,8 +11,8 @@ function EjercicioCard({ejercicio}) {
       <img src={gifUrl} alt={name} />
 
       <p className='uppercase text-stone-600 text-center mt-1'>{name}</p>
-        <div className='flex flex-col md:flex md:flex-row gap-3 mx-auto mt-3 mb-5'>
-            <button className='p-2 bg-emerald-600 text-white rounded-full'>
+        <div className='flex flex-col md:flex md:flex-row gap-5 mx-auto mt-3 mb-5'>
+            <button className='p-2 bg-emerald-600 text-white rounded-full mb-3 md:mb-0 md:mr-3'>
                 {bodyPart}
             </button>
 

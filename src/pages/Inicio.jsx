@@ -17,7 +17,8 @@ function Inicio() {
    const mostrarEjercicios = 9
    const primerElemento = (paginaActual - 1) * mostrarEjercicios
    const ultimoElemento = primerElemento + mostrarEjercicios
-   const ejerciciosPorPagina = ejercicios.slice(primerElemento, ultimoElemento)
+   
+    const ejerciciosPorPagina = ejercicios.slice(primerElemento, ultimoElemento)
    // state para el modal
    
 
@@ -28,7 +29,8 @@ function Inicio() {
     <>
       
       <Hero/>
-      <BuscarEjercicios 
+      <BuscarEjercicios
+        
         setEjercicios={setEjercicios}/>
       {ejerciciosPorPagina.length && <Paginacion 
                                       paginaActual={paginaActual}
