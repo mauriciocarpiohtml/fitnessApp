@@ -24,13 +24,13 @@ function Rutina() {
   
   return (
     <div className='flex flex-col mt-10 mb-10'>
-      {rutina.length ? <>
-                      <NavegacionDias
-                      diaSeleccionado={diaSeleccionado} 
-                      setDiaSeleccionado={setDiaSeleccionado}/>
-                      <ListaAgregados
-                      ejerciciosPorPagina={rutinaFiltrada} /> 
-                    </>:'' }
+      {rutina.length && <>
+                        <NavegacionDias
+                        diaSeleccionado={diaSeleccionado} 
+                        setDiaSeleccionado={setDiaSeleccionado}/>
+                        <ListaAgregados
+                        ejerciciosPorPagina={rutinaFiltrada} /> 
+                        </> }
       
     </div>
   )

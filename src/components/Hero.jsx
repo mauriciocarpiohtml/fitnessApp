@@ -3,7 +3,7 @@ import hero from '../imagenes/hero1.jpg'
 function Hero() {
   // style={{height:'75vh'}}
   return (
-    <div className='flex flex-col md:flex-row relative h-[75vh]' >
+    <div className='flex flex-col md:flex-row relative h-[75vh] bg-[#FAFAF9]' >
         <div className='flex flex-col justify-center items-center  w-3/5 p-8 md:p-0 z-10 absolute top-10 md:top-[30%]'>
             <p className='font-black text-emerald-500 text-left tracking-wide text-base mr-24 md:mr-48'>FitnessApp</p>
             <h2 className='text-2xl font-bold text-stone-700 uppercase text-left '>create your <br/> personalized  routine </h2>

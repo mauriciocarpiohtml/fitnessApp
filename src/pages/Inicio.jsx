@@ -30,7 +30,6 @@ function Inicio() {
       
       <Hero/>
       <BuscarEjercicios
-        
         setEjercicios={setEjercicios}/>
       {ejerciciosPorPagina.length && <Paginacion 
                                       paginaActual={paginaActual}
