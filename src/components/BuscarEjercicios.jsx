@@ -1,8 +1,12 @@
+
 import React from 'react'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import ContextEjercicios from '../context/EjerciciosProvider'
  import { opcionesEjercicios } from '../utils/fetch'
+ 
 
 function BuscarEjercicios({ setEjercicios}) {
+  const {setMostrarBusqueda} = useContext(ContextEjercicios)
   const [busqueda, setBusqueda] = useState('')
   
   async function buscarEjercicios(){
@@ -20,6 +24,7 @@ function BuscarEjercicios({ setEjercicios}) {
     
     setBusqueda('')
     setEjercicios(ejercicioBuscado.slice(0, 100))
+    setMostrarBusqueda(true)
   }
 
 

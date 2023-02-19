@@ -7,6 +7,7 @@ function EjerciciosProvider({children}) {
     const [rutina, setRutina] = useState([])
     const [modal, setModal] = useState(false)
     const [ejercicioModal, setEjercicioModal] = useState({})
+    const [mostrarBusqueda, setMostrarBusqueda] = useState(false)
 
     function seleccionarSerie(dia, bodyPart, equipment, gifUrl, name, target){
         const serie ={
@@ -22,7 +23,7 @@ function EjerciciosProvider({children}) {
     }
   return (
     <ContextEjercicios.Provider 
-      value={{rutina, seleccionarSerie, activarModal,setModal,modal, ejercicioModal}}>
+      value={{rutina, seleccionarSerie, activarModal,setModal,modal, ejercicioModal, mostrarBusqueda, setMostrarBusqueda}}>
       {children}
     </ContextEjercicios.Provider>
   )

@@ -9,7 +9,7 @@ import ContextEjercicios from '../context/EjerciciosProvider'
 // componente modal
 
 function Inicio() {
-    const {modal} = useContext(ContextEjercicios)
+    const {modal, mostrarBusqueda} = useContext(ContextEjercicios)
 
    const [ejercicios, setEjercicios] = useState([])
    const [paginaActual, setPaginaActual] = useState(1)
@@ -31,12 +31,12 @@ function Inicio() {
       <Hero/>
       <BuscarEjercicios
         setEjercicios={setEjercicios}/>
-      {ejerciciosPorPagina.length && <Paginacion 
+      {ejerciciosPorPagina.length > 0 && <Paginacion 
                                       paginaActual={paginaActual}
                                       cambiarPagina={cambiarPagina}
                                       ejercicios={ejercicios}/> }
-      <EjerciciosLista
-        ejerciciosPorPagina={ejerciciosPorPagina}/>
+      {<EjerciciosLista
+              ejerciciosPorPagina={ejerciciosPorPagina}/>}
       
       {modal && <ModalEjercicio/>}
     </>
