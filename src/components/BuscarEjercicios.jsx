@@ -41,7 +41,7 @@ function BuscarEjercicios({ setEjercicios}) {
          className=' shadow-lg w-3/4 md:w-2/4 p-3 border border-slate-300 placeholder-slate-500  focus:outline-none focus:border-emerald-500 focus:ring-emerald-500' />
         <button
         onClick={buscarEjercicios} 
-        className='bg-emerald-600 p-3  font-bold text-white shadow-lg'>Search</button>
+        className='bg-teal-600 p-3  font-bold text-white shadow-lg'>Search</button>
       </div>
 
       
