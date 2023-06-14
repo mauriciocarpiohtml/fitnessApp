@@ -23,7 +23,8 @@ function EjerciciosProvider({children}) {
     }
   return (
     <ContextEjercicios.Provider 
-      value={{rutina, seleccionarSerie, activarModal,setModal,modal, ejercicioModal, mostrarBusqueda, setMostrarBusqueda}}>
+      value={{rutina, seleccionarSerie, activarModal,setModal,
+      modal, ejercicioModal, mostrarBusqueda, setMostrarBusqueda}}>
       {children}
     </ContextEjercicios.Provider>
   )

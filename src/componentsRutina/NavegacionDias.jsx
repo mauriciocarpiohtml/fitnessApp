@@ -1,7 +1,7 @@
 
 
 function NavegacionDias({diaSeleccionado, setDiaSeleccionado}) {
-    const diasSemana = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']
+    const diasSemana = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
     
   return (
     

@@ -22,12 +22,12 @@ function ModalEjercicio() {
                     <select
                         onChange={(e)=> setDia(e.target.value)}
                         className='p-3 rounded-lg cursor-pointer shadow-lg mt-1 w-full md:w-2/5 '>
-                        <option value=''>Seleccione un día</option>
-                        <option value='Lunes'>Lunes</option>
-                        <option value='Martes'>Martes</option>
-                        <option value='Miercoles'>Miercoles</option>
-                        <option value='Jueves'>Jueves</option>
-                        <option value='Viernes'>Viernes</option>
+                        <option value=''>Select a day</option>
+                        <option value='Monday'>Monday</option>
+                        <option value='Tuesday'>Tuesday</option>
+                        <option value='Wednesday'>Wednesday </option>
+                        <option value='Thrusday'>Thursday </option>
+                        <option value='Friday'>Friday </option>
                     </select>
 
                     <button onClick={()=> seleccionarSerie(dia, bodyPart, equipment, gifUrl, name, target )}    

@@ -3,8 +3,8 @@ import { useState } from 'react'
 
 export default function CrearRutina() {
 
-    const [dias, setDias] = useState('')
-    const [duracion, setDuracion] = useState('')
+    const [dias, setDias] = useState(1)
+    const [duracion, setDuracion] = useState(30)
     const [musculos, setMusculos] = useState('')
     const [rutinaIA, setRutinaIA] = useState()
     const[respuesta, setRespuesta] = useState(false)
@@ -12,12 +12,15 @@ export default function CrearRutina() {
     async function crearRutina(e){
         e.preventDefault()
         try {
-            const response = await fetch('http://localhost:5006/', {
+            const response = await fetch('https://backend-fitness.vercel.app', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ prompt : `crea un cuadro con una rutina para entrenar ${dias} a la semana en el gimnasio durante ${duracion} , los musculos que quiero entrenar durante la semana son:${musculos}, indica la cantidad de series y repeticiones de cada ejercicio, crea saltos de linea html luego de cada dia y cada ejercicio , el dia tiene que estar en negrita`})
+                body: JSON.stringify({ prompt : `create a table with a training routine for ${dias}
+                 days per week at the gym, lasting ${duracion}. The muscles I want to train during 
+                 the week are: ${musculos}. Please indicate the number of sets and repetitions for each exercise and create
+                 HTML line breaks after each day and each exercise. The day should be in bold.`})
             });
     
             const data = await response.json();
@@ -56,9 +59,9 @@ export default function CrearRutina() {
                  <select
                  onChange={(e) => setDuracion(e.target.value)} 
                  className='w-full rounded-lg p-3 cursor-pointer mt-1'>
-                    <option>30 minutos</option>
-                    <option>45 minutos</option>
-                    <option>1 Hora</option>
+                    <option>30 minutes</option>
+                    <option>45 minutes</option>
+                    <option>1 hour</option>
                 </select>
                 </div>
 

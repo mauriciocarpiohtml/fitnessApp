@@ -1,15 +1,17 @@
 const express = require('express')
 const cors = require('cors')
 const {Configuration, OpenAIApi} = require('openai')
+const dotenv = require('dotenv')
 
 
 const app = express()
+dotenv.config()
 app.use(cors())
 
 app.use(express.json())
 
 const configuration = new Configuration({
-    apiKey: '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'
+    apiKey: process.env.api_key
 })
 
 const openai = new OpenAIApi(configuration)
@@ -36,4 +38,7 @@ app.post('/', async(req, res) => {
 })
 
 
-app.listen(5006, () => console.log('Server is running in the port http://localhost:5006'))
+const port = process.env.port
+
+
+app.listen(port, () => console.log('Server is running in the port http://localhost:5006'))

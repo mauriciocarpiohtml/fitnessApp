@@ -8,7 +8,7 @@ function Rutina() {
   // activar modal con useContext y luego pasarlo aca
 
   const {rutina} = useContext(ContextEjercicios)
-  const [diaSeleccionado, setDiaSeleccionado] = useState('Lunes')
+  const [diaSeleccionado, setDiaSeleccionado] = useState('Monday')
   const [rutinaFiltrada, setRutinaFiltrada] = useState([])
 
   useEffect(()=>{
