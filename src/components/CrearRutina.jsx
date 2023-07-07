@@ -36,8 +36,8 @@ export default function CrearRutina() {
   return (
     <div className=' mx-auto p-3 mb-10 md:w-3/4 mt-5'>
       <h3 className='text-stone-600 text-center font-bold uppercase text-2xl md:text-3xl mb-5'>Create your routine</h3>
-      <div className='w-full flex justify-between gap-12'>
-        <div className='md:w-[50%] p-3 rounded-lg border border-teal-300 shadow-lg'>
+      <div className='w-full flex flex-col lg:flex-row justify-between gap-12'>
+        <div className='lg:w-[50%] mx-auto p-3 rounded-lg border border-teal-300 shadow-lg'>
             <form className='p-5'>
                 <div className='mt-1'>
                  <label
@@ -80,15 +80,13 @@ export default function CrearRutina() {
             </form>
         </div>
         {respuesta && (
-            <div className='md:w-[50%] p-5 bg-gray-200 shadow-lg border h-auto rounded-lg'>
-            <div
-             className='text-sm text-gray-500 mb-1 mt-3'
-             dangerouslySetInnerHTML={{ __html: html }} />
-            </div>
+            <div className=' w-full text-center lg:w-[50%] p-5 bg-gray-200 mx-auto shadow-lg border h-auto rounded-lg'>
+                <div
+                className='text-sm text-gray-500 mb-1 mt-3'
+                dangerouslySetInnerHTML={{ __html: html }} />
+                </div>
         )}
-        
-
-      </div>
+            </div>
     </div>
   )
 }

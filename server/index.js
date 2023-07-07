@@ -41,4 +41,4 @@ app.post('/', async(req, res) => {
 const port = process.env.port
 
 
-app.listen(port, () => console.log('Server is running in the port http://localhost:5006'))
+app.listen(port, () => console.log(`Server is running in the port http://localhost:5006`))
